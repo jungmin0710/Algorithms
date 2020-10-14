@@ -74,6 +74,20 @@ for i in range(n):
   input_data = input().split()
   array.append((input_data[0],int(input_data[1])))
 
-array = sorted(array, key = lambda student: student[1])
 
-for student in array : print(student[0], " ", end = '')
+#array = sorted(array, key = lambda student: student[1])
+
+#for student in array : print(student[0], " ", end = '')
+
+
+for i in range(len(array)):
+  min_index = i
+  for j in range(i+1, len(array)):
+    if array[min_index][1] > array[j][1]: # 비교 기준을 리스트안의 1번째 자리로 고정해버린다
+      min_index = j
+
+  array[i], array[min_index] = array[min_index], array[i]
+
+
+for i in range(len(array)):
+  print(array[i][0], " ", end = '')
