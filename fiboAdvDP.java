@@ -17,10 +17,10 @@ class Main {
     System.out.println(n +"번째 피보나치 수열은 " +fiboList.get(n-1) + "입니다.");
 
     //3.n번째 까지의 피보나치 수열 개수
-    System.out.println(n +"번째까지 피보나치 수열 개수는 " + fiboList.size() + "입니다.");
+    System.out.println(n +"번째까지 피보나치 수열 개수는 " + fiboList.size() + "개 입니다.");
 
     //4.n번째 까지의 모든 피보나치 수열 나열하기
-    System.out.print(n + "까지 모든 피보나치 수열 : ");
+    System.out.print(n + "번째까지 모든 피보나치 수열 : ");
     System.out.println(fiboList.toString());
 
     //5.n번째까지의 모든 피보나치 수열 합계
