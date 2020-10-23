@@ -8,7 +8,7 @@ class Main {
     Scanner stdIn = new Scanner(System.in);
     int n = stdIn.nextInt();
     //n인덱스까지 만들기
-    Integer[] dp = new Integer[n+1];
+    long[] dp = new long[n+1];//long형은 더 큰 자릿수를 표시할 수 있게 한다
     //0, 1번 숫자를 설정한다
     dp[0] = 0;
     dp[1] = 1;
