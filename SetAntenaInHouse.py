@@ -1,3 +1,5 @@
+##방법1: 합계를 계산해서 산출
+
 #입력받기 + 정렬(최솟값이 여러개 나올 경우 앞 쪽 값을 먼저 산출)
 n = int(input())
 house = list(map(int,input().split(" ")))
@@ -23,3 +25,12 @@ for i in range(len(result)):
 print(answer)
 
     
+
+  
+##방법 2: 중간값으로 산출
+
+n = int(input())
+a = list(map(int,input().split()))
+a.sort()
+
+print(a[(n-1)//2])
