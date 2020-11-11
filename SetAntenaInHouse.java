@@ -41,6 +41,7 @@ class Main {
 
 
 //방법 2: 중간값을 내어 결과 산출
+
 import java.util.*;
 
 class Main {
@@ -53,9 +54,10 @@ class Main {
       arrayList.add(sc.nextInt());
       } 
       
-      Collections.sort(students);
+      Collections.sort(arrayList);
 
     // 중간값(median)을 출력 
-    System.out.println(v[(n - 1) / 2]);
+    System.out.println(arrayList.get((n - 1) / 2));
   }   
 }
+
