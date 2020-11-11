@@ -1,3 +1,5 @@
+//방법 1: 합계를 전체 계산해서 답을 산출
+
 import java.util.*;
 
 class Main {
@@ -34,4 +36,26 @@ class Main {
 
     System.out.println(answer);
   }
+}
+
+
+
+//방법 2: 중간값을 내어 결과 산출
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in); 
+    int n = sc.nextInt();
+    ArrayList<Integer> arrayList = new ArrayList<>(); 
+    
+    for (int i = 0; i < n; i++) { 
+      arrayList.add(sc.nextInt());
+      } 
+      
+      Collections.sort(students);
+
+    // 중간값(median)을 출력 
+    System.out.println(v[(n - 1) / 2]);
+  }   
 }
